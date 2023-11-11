@@ -1,0 +1,22 @@
+import {Meta, ColorPalette, ColorItem, Story} from '@storybook/blocks';
+import * as WorkaroundComponentStories from "./workaround.component.stories";
+
+
+<Meta title="ColorsFixed"/>
+
+<div style={{display: "none"}}>
+  Workaround: The theme variable is not injected when no story is used on the page, so we inject some story here
+  <Story of={WorkaroundComponentStories.Empty} meta={WorkaroundComponentStories}></Story>
+</div>
+
+# Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Primary color"
+    subtitle=""
+    colors={{
+      "Primary": 'var(--primary-color)',
+    }}
+  />
+</ColorPalette>
