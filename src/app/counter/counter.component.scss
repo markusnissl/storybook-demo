@@ -1,0 +1,15 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+:host(.primary) {
+  background-color: green;
+}
+
+:host(.secondary) {
+  background-color: orange;
+}
+

@@ -1,0 +1,21 @@
+import { Canvas, Meta, Story, Controls } from '@storybook/addon-docs';
+
+import * as DsBadgeStories from './badge.component.stories';
+
+# Badge Component
+
+<Meta of={DsBadgeStories} />
+
+## Documentation
+
+### Simple
+<Canvas>
+  <Story of={DsBadgeStories.Default}/>
+</Canvas>
+<Controls of={DsBadgeStories.Default}/>
+
+### With Counter
+<Canvas>
+  <Story of={DsBadgeStories.WithCounter}/>
+</Canvas>
+<Controls of={DsBadgeStories.WithCounter}/>
